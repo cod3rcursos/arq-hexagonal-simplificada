@@ -1,4 +1,4 @@
-import CasaDeUso from '../../shared/CasoDeUso.ts'
+import CasoDeUso from '../../shared/CasoDeUso.ts'
 import ColecaoUsuario from '../model/ColecaoUsuario.ts'
 import ProvedorCripto from '../model/ProvedorCripto.ts'
 import Usuario from '../model/Usuario.ts'
@@ -8,7 +8,7 @@ export type LoginUsuarioEntrada = {
     senha: string
 }
 
-export default class LoginUsuario implements CasaDeUso<LoginUsuarioEntrada, Usuario | null> {
+export default class LoginUsuario implements CasoDeUso<LoginUsuarioEntrada, Usuario | null> {
 
     constructor(private colecao: ColecaoUsuario, private provedorCripto: ProvedorCripto) {}
 

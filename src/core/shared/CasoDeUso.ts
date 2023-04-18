@@ -1,3 +1,3 @@
-export default interface CasaDeUso<IN, OUT> {
+export default interface CasoDeUso<IN, OUT> {
     executar(entrada: IN): Promise<OUT>
 }
